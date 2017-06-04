@@ -1,6 +1,6 @@
 {
   "name": "markdown-headings",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Get headings in markdown",
   "main": "index.js",
   "scripts": {
