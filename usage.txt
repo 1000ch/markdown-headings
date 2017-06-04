@@ -1,0 +1,7 @@
+Usage
+  $ markdown-headings [<file|glob> ...]
+
+Options
+  --help          Show help
+  --stdin         Process string from stdin
+  --version       Show version

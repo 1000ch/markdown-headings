@@ -1,0 +1,37 @@
+{
+  "name": "markdown-headings",
+  "version": "0.0.0",
+  "description": "Get headings in markdown",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && ava --verbose"
+  },
+  "bin": {
+    "markdown-headings": "cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1000ch/markdown-headings.git"
+  },
+  "author": "1000ch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1000ch/markdown-headings/issues"
+  },
+  "homepage": "https://github.com/1000ch/markdown-headings#readme",
+  "dependencies": {
+    "get-stdin": "^5.0.1",
+    "globby": "^6.1.0",
+    "is-string": "^1.0.4",
+    "markdown-it": "^8.3.1",
+    "minimist": "^1.2.0",
+    "pify": "^2.3.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  },
+  "xo": {
+    "space": 2
+  }
+}
