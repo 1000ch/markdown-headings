@@ -12,9 +12,10 @@ const getVersion = () => Promise.resolve(require('./package').version);
 
 const getHelp = () => fsP.readFile(`${__dirname}/usage.txt`).then(b => b.toString());
 
-const getResult = args => globby(args, {nodir: true})
-  .then(files => files.map(file => path.resolve(process.cwd(), file)))
-  .then(files => Promise.all(files.map(file => fsP.readFile(file))))
+const getFiles = args => globby(args, {nodir: true})
+  .then(files => files.map(file => path.resolve(process.cwd(), file)));
+
+const getResults = files => Promise.all(files.map(file => fsP.readFile(file)))
   .then(texts => Promise.all(texts.map(text => markdownHeadings(text))))
   .then(results => Array.prototype.concat.apply([], results));
 
@@ -41,7 +42,7 @@ if (argv.v || argv.version) {
     process.exit(0);
   });
 } else {
-  getResult(argv._).then(headings => {
+  getFiles(argv._).then(files => getResults(files)).then(headings => {
     console.log(headings.join('\n'));
     process.exit(0);
   }).catch(err => {
