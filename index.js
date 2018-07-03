@@ -14,14 +14,14 @@ module.exports = arg => {
   const tokens = markdownIt.parse(markdown);
 
   const headings = [];
-  let markup = null;
+  let headingToken = null;
 
   for (const token of tokens) {
     if (headingTags.indexOf(token.tag) !== -1) {
       if (token.type === 'heading_open') {
-        markup = token.markup;
+        headingToken = token.markup;
       } else if (token.type === 'heading_close') {
-        markup = null;
+        headingToken = null;
       }
     }
 
@@ -29,11 +29,11 @@ module.exports = arg => {
       continue;
     }
 
-    if (markup === null) {
+    if (headingToken === null) {
       continue;
     }
 
-    headings.push(`${markup} ${token.children.map(t => t.content).join('')}`);
+    headings.push(`${headingToken} ${token.children.map(t => t.content).join('')}`);
   }
 
   return headings;
