@@ -21,8 +21,8 @@
   },
   "homepage": "https://github.com/1000ch/markdown-headings#readme",
   "dependencies": {
-    "get-stdin": "^5.0.1",
-    "globby": "^6.1.0",
+    "get-stdin": "^6.0.0",
+    "globby": "^8.0.0",
     "is-string": "^1.0.4",
     "markdown-it": "^8.3.1",
     "minimist": "^1.2.0",
