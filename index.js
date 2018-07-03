@@ -11,7 +11,7 @@ module.exports = arg => {
   }
 
   const markdownIt = new MarkdownIt();
-  const tokens = markdownIt.parse(markdown);
+  const tokens = markdownIt.parse(markdown, {});
 
   const headings = [];
   let headingToken = null;
