@@ -6,7 +6,6 @@
   "scripts": {
     "test": "xo && ava --verbose"
   },
-  "bin": "cli.js",
   "engines": {
     "node": ">=10"
   },
@@ -21,12 +20,8 @@
   },
   "homepage": "https://github.com/1000ch/markdown-headings#readme",
   "dependencies": {
-    "get-stdin": "^8.0.0",
-    "globby": "^11.0.0",
     "is-string": "^1.0.4",
-    "markdown-it": "^11.0.0",
-    "minimist": "^1.2.0",
-    "pify": "^3.0.0"
+    "markdown-it": "^11.0.0"
   },
   "devDependencies": {
     "ava": "^3.9.0",

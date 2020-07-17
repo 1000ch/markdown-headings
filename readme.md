@@ -15,20 +15,6 @@ $ npm install --save markdown-headings
 
 ## Usage
 
-### CLI
-
-```bash
-Usage
-  $ markdown-headings [<file|glob> ...]
-
-Options
-  --help          Show help
-  --stdin         Process string from stdin
-  --version       Show version
-```
-
-### JavaScript
-
 ```javascript
 const assert = require('assert');
 const markdownHeadings = require('markdown-headings');
