@@ -1,7 +1,7 @@
 const isString = require('is-string');
 const MarkdownIt = require('markdown-it');
 
-const headingTags = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
+const headingTags = new Set(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']);
 
 module.exports = arg => {
   const markdown = Buffer.isBuffer(arg) ? arg.toString() : arg;
@@ -17,7 +17,7 @@ module.exports = arg => {
   let headingToken = null;
 
   for (const token of tokens) {
-    if (headingTags.indexOf(token.tag) !== -1) {
+    if (headingTags.has(token.tag)) {
       if (token.type === 'heading_open') {
         headingToken = token.markup;
       } else if (token.type === 'heading_close') {
