@@ -13,7 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/1000ch/markdown-headings.git"
   },
-  "author": "1000ch",
+  "author": {
+    "name": "Shogo Sensui",
+    "email": "shogosensui@gmail.com",
+    "url": "https://github.com/1000ch"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/1000ch/markdown-headings/issues"
