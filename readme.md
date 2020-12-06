@@ -2,7 +2,7 @@
 
 Get headings in markdown.
 
-[![Build Status](https://travis-ci.org/1000ch/markdown-headings.svg?branch=master)](https://travis-ci.org/1000ch/markdown-headings)
+![GitHub Actions Status](https://github.com/1000ch/markdown-headings/workflows/test/badge.svg?branch=master)
 [![NPM version](https://badge.fury.io/js/markdown-headings.svg)](http://badge.fury.io/js/markdown-headings)
 [![Dependency Status](https://david-dm.org/1000ch/markdown-headings.svg)](https://david-dm.org/1000ch/markdown-headings)
 [![devDependency Status](https://david-dm.org/1000ch/markdown-headings/dev-status.svg)](https://david-dm.org/1000ch/markdown-headings?type=dev)
