@@ -28,8 +28,8 @@
     "markdown-it": "^11.0.0"
   },
   "devDependencies": {
-    "ava": "^3.9.0",
-    "xo": "^0.32.1"
+    "ava": "^3.14.0",
+    "xo": "^0.36.1"
   },
   "xo": {
     "space": 2
