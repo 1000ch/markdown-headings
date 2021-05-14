@@ -1,5 +1,5 @@
-const test = require('ava');
-const markdownHeadings = require('.');
+import test from 'ava';
+import markdownHeadings from './index.js';
 
 test('Check string', t => {
   const markdown = `# heading 1

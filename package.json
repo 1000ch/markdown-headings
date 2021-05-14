@@ -2,27 +2,28 @@
   "name": "markdown-headings",
   "version": "2.0.0",
   "description": "Get headings in markdown",
-  "main": "index.js",
-  "scripts": {
-    "test": "xo && ava --verbose"
-  },
-  "engines": {
-    "node": ">=10"
+  "homepage": "https://github.com/1000ch/markdown-headings#readme",
+  "bugs": {
+    "url": "https://github.com/1000ch/markdown-headings/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/1000ch/markdown-headings.git"
   },
+  "license": "MIT",
   "author": {
     "name": "Shogo Sensui",
     "email": "shogosensui@gmail.com",
     "url": "https://github.com/1000ch"
   },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/1000ch/markdown-headings/issues"
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && ava --verbose"
   },
-  "homepage": "https://github.com/1000ch/markdown-headings#readme",
+  "xo": {
+    "space": 2
+  },
   "dependencies": {
     "is-string": "^1.0.5",
     "markdown-it": "^12.0.4"
@@ -31,7 +32,7 @@
     "ava": "^3.15.0",
     "xo": "^0.38.2"
   },
-  "xo": {
-    "space": 2
+  "engines": {
+    "node": ">=12.20.0"
   }
 }

@@ -1,9 +1,9 @@
-const isString = require('is-string');
-const MarkdownIt = require('markdown-it');
+import isString from 'is-string';
+import MarkdownIt from 'markdown-it';
 
 const headingTags = new Set(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']);
 
-module.exports = arg => {
+export default function markdownHeadings(arg) {
   const markdown = Buffer.isBuffer(arg) ? arg.toString() : arg;
 
   if (!isString(markdown)) {
@@ -37,4 +37,4 @@ module.exports = arg => {
   }
 
   return headings;
-};
+}
