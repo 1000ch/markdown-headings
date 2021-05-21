@@ -18,6 +18,9 @@
   },
   "type": "module",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "xo && ava --verbose"
   },
