@@ -1,3 +1,4 @@
+import {Buffer} from 'node:buffer';
 import isString from 'is-string';
 import MarkdownIt from 'markdown-it';
 
