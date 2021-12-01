@@ -17,7 +17,7 @@
     "url": "https://github.com/1000ch"
   },
   "type": "module",
-  "main": "index.js",
+  "exports": "./index.js",
   "files": [
     "index.js"
   ],
