@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "ava": "^4.3.0",
-    "xo": "^0.50.0"
+    "xo": "^0.52.2"
   },
   "engines": {
     "node": ">=14"
