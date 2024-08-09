@@ -1,15 +1,14 @@
 import {Buffer} from 'node:buffer';
-import isString from 'is-string';
 import MarkdownIt from 'markdown-it';
 
 const headingTags = new Set(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']);
 const ignoredTokens = new Set(['heading_open', 'heading_close']);
 
-export default function markdownHeadings(arg) {
-  const markdown = Buffer.isBuffer(arg) ? arg.toString() : arg;
+export default function markdownHeadings(object) {
+  const markdown = Buffer.isBuffer(object) ? object.toString() : object;
 
-  if (!isString(markdown)) {
-    throw new Error('Argument is not String');
+  if (typeof markdown !== 'string') {
+    throw new TypeError('Argument is not String');
   }
 
   const markdownIt = new MarkdownIt();

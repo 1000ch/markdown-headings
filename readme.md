@@ -1,4 +1,4 @@
-# markdown-headings ![GitHub Actions Status](https://github.com/1000ch/markdown-headings/workflows/test/badge.svg?branch=main)
+# markdown-headings ![GitHub Actions Status](https://github.com/1000ch/markdown-headings/actions/workflows/test.yml/badge.svg)
 
 Get headings in markdown.
 
@@ -11,8 +11,8 @@ $ npm install --save markdown-headings
 ## Usage
 
 ```javascript
-const assert = require('assert');
-const markdownHeadings = require('markdown-headings');
+import assert from 'assert';
+import markdownHeadings from 'markdown-headings';
 
 assert.deepEqual(markdownHeadings(`# heading1`), ['# heading 1']);
 ```
